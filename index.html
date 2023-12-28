@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allen's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/images/allens-logo.webp" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/allens-logo.webp" class="main-img" />
+      <nav>
+        <ul>
+          <li onclick="navigateTo('#about-info')">
+            <a href="#about-info">ABOUT</a>
+          </li>
+          <li onclick="navigateTo('#projects-info')">
+            <a href="#projects-info">PROJECTS</a>
+          </li>
+          <li onclick="navigateTo('#contact-info')">
+            <a href="#contact-info">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about-info" class="about-info">
+      <h1>Hey I am Allen</h1>
+      <p>a first-year student at UMD</p>
+    </section>
+    <section id="projects-info" class="projects-info">
+      <h1>Here are some of my projects...</h1>
+      <div class="grid-container">
+        <a
+          target="_blank"
+          href="rock-paper-scissors.html"
+          class="project-three-grid"
+        >
+          <img src="/images/rock-paper-scissors.png" alt="" />
+
+          <p class="project-title">
+            <span class="code"><</span>
+            Rock Paper Scissors Simulator
+            <span class="code">/></span>
+          </p>
+        </a>
+        <a href="todo-list.html" class="project-one-grid" target="_blank">
+          <img src="/images/todo-list.png" alt="" />
+          <p class="project-title">
+            <span class="code"><</span>
+            Todo List Creator
+            <span class="code">/></span>
+          </p>
+        </a>
+      </div>
+    </section>
+    <section id="contact-info" class="contact-info">
+      <div class="collab">
+        <h1>Lets Collab...</h1>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/allenyoo/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/frosttyallens" target="_blank">GitHub</a>
+          <a
+            href="https://www.instagram.com/frostyyallens?igsh=bzQyNjRxaGx0N2Zl"
+            target="_blank"
+            >Instagram</a
+          >
+          <a href="mailto:ayoo123@umd.edu" target="_blank">Email</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="margin">**This is Frostyy Allen's official portfolio!</p>
+      <p>© Created by Frostyy Allen</p>
+    </footer>
+
+    <script>
+      function navigateTo(target) {
+        window.location.href = target;
+      }
+    </script>
+  </body>
+</html>

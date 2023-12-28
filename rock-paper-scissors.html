@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rock-paper-scissors.css" />
+    <link rel="icon" href="images/FAVICON.jpeg" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="section">
+      <p class="header">Rock Paper Scissors</p>
+      <div class="game-buttons">
+        <button
+          onclick="
+    pickResult('rock');
+    "
+          class="rpc-button"
+        >
+          <img
+            src="images/transparent-round-rocky-object-rough-surfaces-angular-surfaces-image-rough-dark-spherical-rock-with-cracks-peb655c8a26700a44.6389801917005634944589.png"
+            alt="Rock"
+            class="manipulate-img"
+          />
+        </button>
+        <button
+          onclick="
+    pickResult('paper');
+    "
+          class="rpc-button"
+        >
+          <img src="images/paper.png" alt="Paper" class="manipulate-img" />
+        </button>
+        <button
+          onclick="
+    pickResult('scissors');
+    "
+          class="rpc-button"
+        >
+          <img
+            src="images/scissors.png"
+            alt="Scissors"
+            class="manipulate-img"
+          />
+        </button>
+      </div>
+
+      <p class="js-result"></p>
+      <p class="js-picks"></p>
+      <p class="js-score"></p>
+      <div class="reset-button">
+        <button
+          onclick="
+    pickResult('reset');
+    "
+          class="the-reset-button"
+        >
+          Reset Score
+        </button>
+      </div>
+    </div>
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>

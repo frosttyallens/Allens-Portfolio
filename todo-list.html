@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/FAVICON.jpeg" />
+    <link rel="stylesheet" href="todo-list.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="spacing">
+      <h1>Todo List!</h1>
+      <div class="input-elements-grid">
+        <input
+          placeholder="Todo Name"
+          class="js-todo-name css-input-name inputs"
+          required
+        />
+        <input type="date" class="js-todo-due-date css-date-name inputs" />
+        <button
+          class="css-add-button inputs"
+          onclick="
+          pushTodo();
+        "
+        >
+          Add
+        </button>
+      </div>
+      <div class="js-display-todo todo-grid"></div>
+    </div>
+    <script src="todo-list.js"></script>
+  </body>
+</html>

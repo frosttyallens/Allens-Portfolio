@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.todos {
+  display: inline-block;
+}
+
+.todo-grid, 
+.input-elements-grid {
+  display: grid;
+  grid-template-columns: 250px 190px 120px;
+  word-wrap: break-word;
+  word-break: break-all;
+  column-gap: 15px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.input-elements-grid {
+  margin-bottom: 20px;
+}
+
+.inputs {
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.css-input-name, .css-date-name {
+  font-size: 18px;
+}
+
+.css-add-button {
+  background-color: rgb(139, 180, 255);
+  border-radius: 5px;
+  font-size: 19px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.css-add-button:hover {
+  background-color: rgb(97, 152, 253);
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.spacing {
+  margin-left: 30px;
+}
+
+.css-delete-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+  background-color: lightcoral;
+  font-size: 19px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.css-delete-button:hover {
+  background-color: rgb(238, 98, 98);
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.result {
+  padding: 10px;
+}
+
+.todo-name, .todo-date {
+  font-size: 18px;
+}
